@@ -34,10 +34,18 @@
     box-sizing: border-box;
 }
 body{
+    font-family: "FuturaPT";
     background-image: url("./pictures/bg.png");
 }
 img{
     display: block;
+}
+.visual-hidden{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    clip-path: rect(0 0 0 0 );
 }
 .container{
     max-width: 1350px;
@@ -657,6 +665,11 @@ body{
     text-align: center;
     margin-top: 800px;
     margin-bottom: 80px;
+    color: #333;
+    font-family: Futura PT;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 20px; 
 }
 .article-list{
     width: 305px;
@@ -759,13 +772,221 @@ body{
 }
 .article-second-item-desc{
     color: #949494;
-font-family: Futura PT;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 125% */
-margin-bottom: 37px;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    margin-bottom: 37px;
 }
 .article-thrid-item{
     margin-left: 65px;
+}
+
+
+
+.contact-right{
+    width: 990px;
+    height: 649px;
+    background-color: #333;
+    background-image: url("./pictures/Group\ 64\ \(1\).svg");
+}
+.contact-text{
+    width: 360px;
+    margin: 62px 165px;
+}
+.contact-title{
+    color: #fff;
+    font-family: Futura PT;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.contact-desc{
+    color: #949494;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; 
+    margin: 0;
+    margin-bottom: 29px;
+}
+.second-form-input{
+    width: 375px;
+    height: 50px;
+    margin: 0;
+    margin-left: 165px;
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+.second-form-input::placeholder{
+    color: #949494;
+    padding: 16px 22px 13px;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+}
+.second-form{
+    display: flex;
+    flex-direction: column;
+}
+.second-form-textare{
+    width: 375px;
+    height: 165px;
+    margin-left: 165px;
+    resize: none;
+    background-color: #fff;
+}
+.second-form-textare::placeholder{
+    color: #949494;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 17px 22px;
+}
+.second-form-btn{
+    width: 226px;
+    height: 50px;
+    color: #fff;
+    margin-left: 165px;
+    margin-top: 30px;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #ffbd54;
+    
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 265px;
+    margin-bottom: 247px;
+}
+.contact-left iframe{
+    width: 462px;
+    height: 652px;
+}
+.site-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-second-table{
+    display: flex;
+}
+.second-footer-list{
+    list-style: none;
+}
+.second-footer-link{
+    text-decoration-line: none;
+    color: #333;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+}
+.second-footer-link:hover{
+    color: #ffbd54;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+}
+.second-footer-link:active{
+    color: rgba(51, 51, 51, 0.70);
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.third-footer-list{
+    list-style: none;
+}
+.third-footer-link{
+    text-decoration-line: none;
+    color: #333;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+}
+.third-footer-link:hover{
+    color: #ffbd54;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+}
+.third-footer-link:active{
+    color: rgba(51, 51, 51, 0.70);
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.site-first-footer{
+    list-style: none;
+}
+.site-first-footer:hover{
+    opacity: 0.8;
+}
+.site-first-footer:active{
+    opacity: 0.6;
+}
+.footer-time-list{
+    list-style: none;
+}
+.footer-time-link{
+    color: #333;
+    font-family: Futura PT;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+.footer-start{
+    display: flex;
+}
+/* .footer-location-list{
+    width: 157px;
+    margin-left: 137px;
+} */
+.footer-phone-list{
+    display: flex;
+    flex-direction: column;
+}
+.footer-list{
+    position: relative;
+    list-style: none;
+}
+.footer-list::before{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 120px;
+    background-image: url("./pictures/Vector\ \(4\)\ \(1\).svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+.footer-link{
+    text-decoration-line: none;
+    color: #333;
+    text-align: right;
+    font-family: Futura PT;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-location-list{
+    margin-left: 50px;
+}
+.footer-start{
+    position: relative;
+}
+.footer-start::before{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    left: 15px;
+    background-image: url("./pictures/schedule\ \(1\).svg");
+    background-repeat: no-repeat;
+    content:"";
 }
